@@ -1,15 +1,11 @@
 package com.visum.vote.service;
 
 import com.visum.vote.dto.InVoteDto;
-import com.visum.vote.dto.OutVoteDto;
 import com.visum.vote.entity.VoteEntity;
 import com.visum.vote.entity.VoteOptionEntity;
 import com.visum.vote.repository.VoteEntityRepository;
 import com.visum.vote.repository.VoteOptionEntityRepository;
-import java.sql.Timestamp;
 import java.util.Optional;
-import java.util.UUID;
-import java.util.stream.Collectors;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityNotFoundException;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
